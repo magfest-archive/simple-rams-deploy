@@ -1,1 +1,2 @@
 run-simple-deploy.sh text eol=lf
+deploy.bat text eol=crlf
