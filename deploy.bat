@@ -1,7 +1,6 @@
 git clone https://github.com/magfest/ubersystem-deploy
 
 cd ubersystem-deploy
-copy puppet\fabric_settings.example.ini puppet\fabric_settings.ini
 
 vagrant up
 
