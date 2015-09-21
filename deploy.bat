@@ -19,4 +19,5 @@ exit
 
 :error
 echo Failed with error #%errorlevel%.
+pause
 exit /b %errorlevel%
