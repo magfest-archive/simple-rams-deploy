@@ -1,11 +1,22 @@
-git clone https://github.com/magfest/ubersystem-deploy
+PATH=%PATH%;C:\Program Files (x86)\Git\bin\
 
-cd ubersystem-deploy
+git clone https://github.com/magfest/ubersystem-deploy || goto :error
 
-vagrant up
+cd ubersystem-deploy || goto :error
 
-vagrant ssh -c 'cd ~/uber/puppet/ && { cat fabric_settings.example.ini; echo -en "\ngit_regular_nodes_repo = 'https://github.com/magfest/production-config'";  } > fabric_settings.ini && ./setup_vagrant_control_server.sh prime'
+vagrant up || goto :error
 
-start http://localhost:8000/uber/accounts/insert_test_admin
+copy ..\run-simple-deploy.sh . || goto :error
 
+vagrant ssh -c 'cd ~/uber/ ^&^& ./run-simple-deploy.sh ^&^& rm -f ./run-simple-deploy.sh' || goto :error
+
+start http://localhost:8000/uber/accounts/insert_test_admin || goto :error
+
+echo "deploy should be finished"
 pause
+exit
+
+
+:error
+echo Failed with error #%errorlevel%.
+exit /b %errorlevel%
