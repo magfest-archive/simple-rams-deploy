@@ -19,3 +19,4 @@ advanced: If you have previous deployments, you must ensure those VMs are stoppe
 4. after the deploy is finished, it will open a web browser, login with username 'magfest@example.com' and password 'magfest'
 5. type 'vagrant ssh' to access the running machine
   
+
