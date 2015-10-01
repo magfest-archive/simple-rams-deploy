@@ -1,9 +1,10 @@
 # Ultra-simple Magfest Prime deploy
 
 ## Prerequisites
-* Vagrant
-* Virtualbox
-* Git
+Install all this stuff:
+* [Git](http://git-scm.com/) to check out this repo and to provide SSH.
+* [VirtualBox](https://www.virtualbox.org/wiki/Downloads) for running your development VM.
+* [Vagrant](http://www.vagrantup.com/downloads.html) itself.
 
 You must have read access to http://github.com/magfest/production-config
 
