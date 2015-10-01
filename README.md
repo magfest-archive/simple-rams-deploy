@@ -6,7 +6,7 @@ Install all this stuff:
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads) for running your development VM.
 * [Vagrant](http://www.vagrantup.com/downloads.html) itself.
 
-You must have read access to http://github.com/magfest/production-config
+You must have read access to http://github.com/magfest/production-config - if you get a 404 when you click that link, this won't work.
 
 ## before you begin
 
