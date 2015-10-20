@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ubersystem-deploy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ubersystem-deploy/puppet/hiera/nodes" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/barcode" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/hotel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/magprime" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/mivs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/panels" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/uber" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/uber_analytics" vcs="Git" />
+  </component>
+</project>
