@@ -13,7 +13,7 @@
     <PathMappingSettings>
       <option name="pathMappings">
         <list>
-          <mapping local-root="C:\projects\rams\prime-deploy\ubersystem-deploy" remote-root="/home/vagrant/uber" />
+          <mapping local-root="$PROJECT_DIR$/ubersystem-deploy" remote-root="/home/vagrant/uber" />
         </list>
       </option>
     </PathMappingSettings>

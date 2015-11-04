@@ -6,14 +6,14 @@
     <option name="SDK_HOME" value="vagrant://$PROJECT_DIR$/ubersystem-deploy/home/vagrant/uber/sideboard/env/bin/python3" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ubersystem-deploy" />
     <option name="IS_MODULE_SDK" value="false" />
-    <option name="ADD_CONTENT_ROOTS" value="false" />
-    <option name="ADD_SOURCE_ROOTS" value="false" />
+    <option name="ADD_CONTENT_ROOTS" value="true" />
+    <option name="ADD_SOURCE_ROOTS" value="true" />
     <module name="prime-deploy" />
     <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
     <PathMappingSettings>
       <option name="pathMappings">
         <list>
-          <mapping local-root="C:\projects\rams\prime-deploy\ubersystem-deploy" remote-root="/home/vagrant/uber" />
+          <mapping local-root="$PROJECT_DIR$/ubersystem-deploy" remote-root="/home/vagrant/uber" />
         </list>
       </option>
     </PathMappingSettings>
@@ -24,10 +24,10 @@
     <option name="TEST_TYPE" value="TEST_SCRIPT" />
     <option name="PATTERN" value="" />
     <option name="USE_PATTERN" value="false" />
-    <option name="testToRun" value="C:\projects\rams\prime-deploy\ubersystem-deploy\sideboard\plugins\uber\uber\tests" />
+    <option name="testToRun" value="C:\projects\rams\prime-deploy\ubersystem-deploy\sideboard\plugins\uber\uber\tests\models\test_attendee.py" />
     <option name="keywords" value="" />
-    <option name="params" value="" />
-    <option name="USE_PARAM" value="false" />
+    <option name="params" value="-vv" />
+    <option name="USE_PARAM" value="true" />
     <option name="USE_KEYWORD" value="false" />
     <method />
   </configuration>
