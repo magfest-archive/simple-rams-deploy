@@ -12,6 +12,13 @@
     <option name="ADD_SOURCE_ROOTS" value="true" />
     <module name="prime-deploy" />
     <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+    <PathMappingSettings>
+      <option name="pathMappings">
+        <list>
+          <mapping local-root="$PROJECT_DIR$/ubersystem-deploy" remote-root="/home/vagrant/uber" />
+        </list>
+      </option>
+    </PathMappingSettings>
     <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ubersystem-deploy/sideboard/sideboard/run_debug_server.py" />
     <option name="PARAMETERS" value="" />
     <option name="SHOW_COMMAND_LINE" value="false" />
