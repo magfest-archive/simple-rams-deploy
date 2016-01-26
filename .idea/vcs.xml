@@ -6,6 +6,7 @@
     <mapping directory="$PROJECT_DIR$/ubersystem-deploy/puppet/hiera/nodes" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ubersystem-deploy/puppet/modules/uber" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/bands" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/barcode" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/hotel" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/magprime" vcs="Git" />
