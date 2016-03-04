@@ -1,4 +1,6 @@
-# Ultra-simple Magfest Prime deploy
+# Magfest Prime deploy
+
+This is the officially supported method of setting up a development environment for Magfest's ubersystem.  It will get you a deployment config that is using the same plugins, and nearly the same configuration, as our production servers.
 
 ## Prerequisites
 Install all this stuff:
