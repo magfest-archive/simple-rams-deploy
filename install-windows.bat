@@ -1,4 +1,4 @@
-PATH=%PATH%;C:\Program Files (x86)\Git\bin\
+PATH=%PATH%;C:\Program Files (x86)\Git\bin\;C:\Program Files\Git\bin\
 
 git clone https://github.com/magfest/ubersystem-deploy || goto :error
 
