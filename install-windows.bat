@@ -1,4 +1,4 @@
-PATH=%PATH%;C:\Program Files (x86)\Git\bin\
+PATH=%PATH%;C:\Program Files (x86)\Git\bin\;C:\Program Files\Git\bin\;C:\Program Files (x86)\Git\usr\bin\;C:\Program Files\Git\usr\bin\
 
 git clone https://github.com/magfest/ubersystem-deploy || goto :error
 
@@ -6,7 +6,7 @@ cd ubersystem-deploy || goto :error
 
 vagrant up || goto :error
 
-copy ..\run-simple-deploy.sh . || goto :error
+copy ..\installfiles\run-simple-deploy.sh . || goto :error
 
 vagrant ssh -c 'cd ~/uber/ ^&^& ./run-simple-deploy.sh ^&^& rm -f ./run-simple-deploy.sh' || goto :error
 
