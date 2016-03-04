@@ -6,7 +6,7 @@ cd ubersystem-deploy || goto :error
 
 vagrant up || goto :error
 
-copy ..\run-simple-deploy.sh . || goto :error
+copy ..\installfiles\run-simple-deploy.sh . || goto :error
 
 vagrant ssh -c 'cd ~/uber/ ^&^& ./run-simple-deploy.sh ^&^& rm -f ./run-simple-deploy.sh' || goto :error
 
