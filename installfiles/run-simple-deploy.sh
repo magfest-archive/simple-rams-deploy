@@ -1,6 +1,6 @@
 #!/bin/bash
 
-EVENT_NAME=prime
+EVENT_NAME=magstock
 
 set -e
 
