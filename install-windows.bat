@@ -26,7 +26,7 @@ echo usage: "%0 EVENT_NAME"
 goto :end
 
 :valid_eventname
-echo installling event_nane=%1%
+echo installling event_name=%1%
 REM ------------------------------------ real stuff starts below --------------------
 
 git clone https://github.com/magfest/ubersystem-deploy || goto :error
@@ -37,7 +37,8 @@ vagrant up || goto :error
 
 copy ..\installfiles\run-simple-deploy.sh . || goto :error
 
-vagrant ssh -c 'cd ~/uber/ ^&^& ./run-simple-deploy.sh %1% ^&^& rm -f ./run-simple-deploy.sh' || goto :error
+set "vm_cmd=cd ~/uber/ ^&^& ./run-simple-deploy.sh %1% ^&^& rm -f ./run-simple-deploy.sh"
+vagrant ssh -c '%vm_cmd%' || goto :error
 
 start http://localhost:8000/uber/accounts/insert_test_admin || goto :error
 
