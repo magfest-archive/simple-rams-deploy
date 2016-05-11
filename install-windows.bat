@@ -5,6 +5,7 @@ PATH=%PATH%;C:\Program Files (x86)\Git\bin\;C:\Program Files\Git\bin\;C:\Program
 for /F "tokens=*" %%A in (valid_eventnames.txt) do (
 	set valid_eventnames=%%A;!valid_eventnames!
 )
+set valid_eventnames=;%valid_eventnames%
 
 IF "%1"=="" goto :no_argument
 
