@@ -1,9 +1,10 @@
 #!/bin/bash
 
-valid_eventnames=("labs" "prime" "magstock")
-
 # fail on any errors
 set -e
+
+# read list of valid event names from external file
+IFS=$'\r\n' GLOBIGNORE='*' command eval  'valid_eventnames=($(cat valid_eventnames.txt))'
 
 function usage() {
   echo ubersystem deployment setup. ERROR: you must specify which event you want to deploy:
@@ -34,6 +35,11 @@ if [ $valid_event -eq 0 ]; then
   usage
   exit -1
 fi
+
+# ----------------------------------------
+# meat starts here
+# ----------------------------------------
+echo installling event_nane=$1
 
 vm_cmd="cd ~/uber/ && ./run-simple-deploy.sh $1 && rm -f ./run-simple-deploy.sh"
 git clone https://github.com/magfest/ubersystem-deploy

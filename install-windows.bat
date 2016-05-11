@@ -2,16 +2,14 @@
 setlocal enableDelayedExpansion
 PATH=%PATH%;C:\Program Files (x86)\Git\bin\;C:\Program Files\Git\bin\;C:\Program Files (x86)\Git\usr\bin\;C:\Program Files\Git\usr\bin\
 
-REM ---- modify this list to include all valid event names
-REM ---- this is Magfest-specific
-set "valid_eventnames=;labs;magstock;prime;"
-REM ------------------------
-REM ------------------------
+for /F "tokens=*" %%A in (valid_eventnames.txt) do (
+	set valid_eventnames=%%A;!valid_eventnames!
+)
 
-IF "%1"=="" goto no_argument
+IF "%1"=="" goto :no_argument
 
 call set "test=%%valid_eventnames:;%~1;=%%"
-if "%test%" neq "%valid_eventnames%" goto valid_eventname
+if "%test%" neq "%valid_eventnames%" goto :valid_eventname
 
 goto :invalid_argument
 
@@ -20,13 +18,14 @@ echo You need to specify an event name when running this command
 
 :invalid_argument
 echo you need to specify an eventname of one of the following: %valid_eventnames%
-goto usage
+goto :usage
 
 :usage
 echo usage: "%0 EVENT_NAME"
 goto :end
 
 :valid_eventname
+echo installling event_nane=%1%
 REM ------------------------------------ real stuff starts below --------------------
 
 git clone https://github.com/magfest/ubersystem-deploy || goto :error
@@ -42,7 +41,7 @@ vagrant ssh -c 'cd ~/uber/ ^&^& ./run-simple-deploy.sh %1% ^&^& rm -f ./run-simp
 start http://localhost:8000/uber/accounts/insert_test_admin || goto :error
 
 echo "deploy should be finished"
-goto end
+goto :end
 
 :error
 echo deploy FAILED with error #%errorlevel%.
