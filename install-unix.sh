@@ -39,7 +39,7 @@ fi
 # ----------------------------------------
 # meat starts here
 # ----------------------------------------
-echo installling event_nane=$1
+echo installling event_name=$1
 
 vm_cmd="cd ~/uber/ && ./run-simple-deploy.sh $1 && rm -f ./run-simple-deploy.sh"
 git clone https://github.com/magfest/ubersystem-deploy
