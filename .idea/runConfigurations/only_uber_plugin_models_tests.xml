@@ -1,11 +1,11 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="run uber plugin tests" type="tests" factoryName="py.test" singleton="true">
+  <configuration default="false" name="only uber plugin models tests" type="tests" factoryName="py.test" singleton="true">
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="PARENT_ENVS" value="true" />
     <envs />
-    <option name="SDK_HOME" value="vagrant://$PROJECT_DIR$/ubersystem-deploy/home/vagrant/uber/sideboard/env/bin/python3" />
+    <option name="SDK_HOME" value="" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ubersystem-deploy" />
-    <option name="IS_MODULE_SDK" value="false" />
+    <option name="IS_MODULE_SDK" value="true" />
     <option name="ADD_CONTENT_ROOTS" value="true" />
     <option name="ADD_SOURCE_ROOTS" value="true" />
     <module name="prime-deploy" />
@@ -24,7 +24,7 @@
     <option name="TEST_TYPE" value="TEST_SCRIPT" />
     <option name="PATTERN" value="" />
     <option name="USE_PATTERN" value="false" />
-    <option name="testToRun" value="C:\projects\rams\prime-deploy\ubersystem-deploy\sideboard\plugins\uber\uber\tests\models\test_attendee.py" />
+    <option name="testToRun" value="sideboard/plugins/uber/uber/tests/models/" />
     <option name="keywords" value="" />
     <option name="params" value="-vv" />
     <option name="USE_PARAM" value="true" />
