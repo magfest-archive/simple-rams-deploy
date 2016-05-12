@@ -18,7 +18,8 @@ goto :invalid_argument
 echo You need to specify an event name when running this command
 
 :invalid_argument
-echo you need to specify an eventname of one of the following: %valid_eventnames%
+set formatted_valid_eventnames=%valid_eventnames:;= %
+echo you need to specify an eventname of one of the following: %formatted_valid_eventnames%
 goto :usage
 
 :usage
