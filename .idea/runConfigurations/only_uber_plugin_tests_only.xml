@@ -1,13 +1,13 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="all sideboard plugins" type="tests" factoryName="py.test">
+  <configuration default="false" name="only uber plugin tests only" type="tests" factoryName="py.test" singleton="true">
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="PARENT_ENVS" value="true" />
     <envs />
     <option name="SDK_HOME" value="" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ubersystem-deploy" />
     <option name="IS_MODULE_SDK" value="true" />
-    <option name="ADD_CONTENT_ROOTS" value="false" />
-    <option name="ADD_SOURCE_ROOTS" value="false" />
+    <option name="ADD_CONTENT_ROOTS" value="true" />
+    <option name="ADD_SOURCE_ROOTS" value="true" />
     <module name="prime-deploy" />
     <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
     <PathMappingSettings>
@@ -17,14 +17,14 @@
         </list>
       </option>
     </PathMappingSettings>
-    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/uber/uber/tests/models/test_attendee.py" />
+    <option name="SCRIPT_NAME" value="" />
     <option name="CLASS_NAME" value="" />
-    <option name="METHOD_NAME" value="test_is_transferable" />
+    <option name="METHOD_NAME" value="" />
     <option name="FOLDER_NAME" value="" />
-    <option name="TEST_TYPE" value="TEST_FUNCTION" />
+    <option name="TEST_TYPE" value="TEST_SCRIPT" />
     <option name="PATTERN" value="" />
     <option name="USE_PATTERN" value="false" />
-    <option name="testToRun" value="C:\projects\rams\prime-deploy\ubersystem-deploy\sideboard\plugins\" />
+    <option name="testToRun" value="sideboard/plugins/uber/uber/tests/" />
     <option name="keywords" value="" />
     <option name="params" value="-vv" />
     <option name="USE_PARAM" value="true" />
