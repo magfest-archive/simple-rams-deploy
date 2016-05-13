@@ -18,10 +18,18 @@ This deploy supports multiple events with different configuration.  Pick an even
 
 ## Install instructions (Windows)
 
-1. clone this repository somewhere [Instructions](https://help.github.com/articles/cloning-a-repository/)
-2. open a command prompt and change directories to the location of the repository
-3. type ```install-windows.bat insert-your-event-name-here``` from the terminal.  For example, to install magstock, you would type: ```install-windows.bat magstock```
-4. after the deploy is finished, it will open a web browser, login with username 'magfest@example.com' and password 'magfest'.  If that doesn't work for any reason, just browse to http://localhost:8000/uber/accounts/insert_test_admin
+1. clone this repository (this repository is named 'simple-rams-deploy') somewhere on your local computer.
+   You can do this by opening a command prompt and running the following commands:
+   ```
+   cd C:\wherever\you\want\your\project\to\live\
+   
+   git clone https://github.com/magfest/simple-rams-deploy
+   
+   cd simple-rams-deploy
+   ```
+   ([More Instructions](https://help.github.com/articles/cloning-a-repository/) if you need them)
+2. type ```install-windows.bat insert-your-event-name-here``` from the command line.  For example, to install magstock, you would type: ```install-windows.bat magstock```
+3. after the deploy is finished, it will open a web browser, login with username 'magfest@example.com' and password 'magfest'.  If that doesn't work for any reason, just browse to http://localhost:8000/uber/accounts/insert_test_admin
 
 ## Install instructions (Linux/Mac/Cygwin/MingW)
 
