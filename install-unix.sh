@@ -51,4 +51,14 @@ vagrant ssh -c \'$vm_cmd\'
 # not sure how / if we should do this on *nix
 # start http://localhost:8000/uber/accounts/insert_test_admin
 
+testadminString="Create your test user at http://localhost:8000/uber/accounts/insert_test_admin"
+
+case "$OSTYPE" in
+  darwin*)  open "http://localhost:8000/uber/accounts/insert_test_admin"  ;; 
+  solaris*) echo $testadminString ;;
+  linux*)   echo $testadminString ;;
+  bsd*)     echo $testadminString ;;
+  *)        echo $testadminString ;;
+esac
+
 echo "deploy should be finished"
