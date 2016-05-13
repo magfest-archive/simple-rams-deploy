@@ -1,4 +1,4 @@
-# Magfest ubersystem simple deploy
+# Magfest ubersystem simple deploy 
 
 This is the officially supported method of setting up a development environment for Magfest's ubersystem.  It will get you a deployment config that is using the same plugins, and nearly identical configuration, as our production servers.  Once deployed,
 you can run a command to update all repositories to the latest changes from github.
