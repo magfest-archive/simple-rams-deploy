@@ -2,16 +2,18 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/sideboard" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/barcode/barcode" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/hotel/hotel" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/magprime/magprime" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/mivs/mivs" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/panels/panels" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/uber/uber" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/uber_analytics/uber_analytics" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/hotel" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/magprime" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/mivs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/bands" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/barcode" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/magstock" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/panels" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/uber" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/uber_analytics" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Remote Python 3.4.3 Vagrant VM at C:/projects/rams/simple-rams-deploy/ubersystem-deploy (/home/vagrant/uber/sideboard/env/bin/python3)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Remote Python 3.4.3 Vagrant VM at C:/projects/rams/magstock-deploy/ubersystem-deploy (/home/vagrant/uber/sideboard/env/bin/python3)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
