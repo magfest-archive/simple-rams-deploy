@@ -6,9 +6,9 @@ you can run a command to update all repositories to the latest changes from gith
 ## Getting started
 
 First, install all this stuff:
-* [Git](http://git-scm.com/) to check out this repo and to provide SSH.
-* [VirtualBox](https://www.virtualbox.org/wiki/Downloads) for running your development VM.
-* [Vagrant](http://www.vagrantup.com/downloads.html) itself.
+* [Git](http://git-scm.com/)
+* [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+* [Vagrant](http://www.vagrantup.com/downloads.html)
 
 It's recommended that you have a fast internet connection, at least 4gb of RAM, and a fast PC for this.
 
@@ -16,9 +16,11 @@ It's recommended that you have a fast internet connection, at least 4gb of RAM, 
 
 This deploy supports multiple events with different configuration.  Pick an event from [the list of valid events](https://github.com/magfest/simple-rams-deploy/blob/master/valid_eventnames.txt) (examples: 'magstock', 'labs', 'prime')
 
-## Install instructions (Windows)
+## Windows-specific setup
 
-1. clone this repository (this repository is named 'simple-rams-deploy') somewhere on your local computer.
+1. open a git BASH terminal by clicking Start menu and typing 'git bash'.  You should see a black  command prompt window with green text.
+
+2. clone this repository (this repository is named 'simple-rams-deploy') somewhere on your local computer.
    You can do this by opening a command prompt and running the following commands:
    ```
    cd C:\wherever\you\want\your\project\to\live\
@@ -28,16 +30,32 @@ This deploy supports multiple events with different configuration.  Pick an even
    cd simple-rams-deploy
    ```
    ([More Instructions](https://help.github.com/articles/cloning-a-repository/) if you need them)
-2. type ```install-windows.bat insert-your-event-name-here``` from the command line.  For example, to install magstock, you would type: ```install-windows.bat magstock```
-3. after the deploy is finished, it will open a web browser, login with username 'magfest@example.com' and password 'magfest'.  If that doesn't work for any reason, just browse to http://localhost:8000/uber/accounts/insert_test_admin
+   
+3. Follow the section named 'Common Instructions' below.
 
-## Install instructions (Linux/Mac/Cygwin/MingW)
+##  Linux/Mac instructions
 
-1. clone this repository somewhere [Instructions](https://help.github.com/articles/cloning-a-repository/)
-2. type ```./install-unix.sh insert-your-event-name-here``` from the terminal.  
+1. clone this repository (this repository is named 'simple-rams-deploy') somewhere on your local computer.
+   You can do this by opening a command prompt and running the following commands:
+   ```
+   cd /home/myusername/somewhere/
+   
+   git clone https://github.com/magfest/simple-rams-deploy
+   
+   cd simple-rams-deploy
+   ```
+   ([More Instructions](https://help.github.com/articles/cloning-a-repository/) if you need them)
+
+2. Follow the section named 'Common Instructions' below.
+
+## Common instructions (Windows/Linux/Mac/Cygwin/MingW)
+
+1. type ```./install-unix.sh insert-your-event-name-here``` from the terminal.  
    For example, to install magstock, you would type: ```./install-unix.sh magstock```
-3. after the deploy is finished, go open a web browser to http://localhost:8000/uber/accounts/insert_test_admin
-4. now you can login with username 'magfest@example.com' and password 'magfest'
+2. after the deploy is finished, open a web browser to ```http://localhost:8000/uber/accounts/insert_test_admin```. This will create a default username/password
+3. now you can login to ubersystem with username 'magfest@example.com' and password 'magfest'
+
+Installation complete!
 
 ## To SSH into the machine
 
