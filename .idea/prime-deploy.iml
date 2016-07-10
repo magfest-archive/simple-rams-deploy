@@ -23,9 +23,11 @@
         <option value="XHTML" />
         <option value="XML" />
         <option value="PLAIN_TEXT" />
+        <option value="JavaScript" />
+        <option value="CSS" />
       </list>
     </option>
-    <option name="TEMPLATE_CONFIGURATION" value="Django" />
+    <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
     <option name="TEMPLATE_FOLDERS">
       <list>
         <option value="$MODULE_DIR$/ubersystem-deploy/sideboard/sideboard/templates" />
