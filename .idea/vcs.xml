@@ -11,6 +11,7 @@
     <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/barcode" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/hotel" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/magclassic" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/magfest" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/magprime" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/magstock" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/mivs" vcs="Git" />
