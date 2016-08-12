@@ -64,6 +64,17 @@ Installation complete!
 
 Now that things are fully installed, check out the docs here for more info on what to do next: 
 https://github.com/magfest/ubersystem-deploy/blob/master/DEVELOPING.md
+
+## Setup PyCharm For Debugging
+1. Configure your remote interpreter for Vagrant by going to Preferences
+2. Under Project->Project Interpreter add a Remote Interpreter
+3. Select Vagrant and put your python path as ```/home/vagrant/uber/sideboard/env/bin/python```
+4. Edit your configurations
+5. Add a python interpreter, and name it sideboard if you'd like
+6. Set the script to one located at ```/simple-rams-deploy/ubersystem-deploy/sideboard/sideboard/run_server.py```
+7. Select your python interpreter as Python 3.4.3
+8. Set your working directory as ```/simple-rams-deploy/ubersystem-deploy/sideboard/sideboard```
+9. You should be able to run uber from Pycharm now! Good luck!
   
 ## Troubleshooting
 
