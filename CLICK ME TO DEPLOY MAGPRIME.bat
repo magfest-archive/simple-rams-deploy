@@ -1,1 +1,0 @@
-install-windows.bat prime
