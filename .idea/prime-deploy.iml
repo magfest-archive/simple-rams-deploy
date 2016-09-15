@@ -16,6 +16,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/magclassic" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/magfest" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/reports" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Remote Python 3.4.3 Vagrant VM at C:/projects/rams/simple-rams-deploy/ubersystem-deploy (/home/vagrant/uber/sideboard/env/bin/python3)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
