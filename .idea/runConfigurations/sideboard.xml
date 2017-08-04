@@ -6,7 +6,7 @@
       <env name="PYTHONUNBUFFERED" value="1" />
     </envs>
     <option name="SDK_HOME" value="vagrant://$PROJECT_DIR$/ubersystem-deploy/home/vagrant/uber/sideboard/env/bin/python3" />
-    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ubersystem-deploy/sideboard/" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ubersystem-deploy/sideboard" />
     <option name="IS_MODULE_SDK" value="false" />
     <option name="ADD_CONTENT_ROOTS" value="true" />
     <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -22,6 +22,7 @@
     <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ubersystem-deploy/sideboard/sideboard/run_debug_server.py" />
     <option name="PARAMETERS" value="" />
     <option name="SHOW_COMMAND_LINE" value="false" />
+    <option name="EMULATE_TERMINAL" value="false" />
     <method />
   </configuration>
 </component>
