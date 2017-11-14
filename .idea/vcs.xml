@@ -7,8 +7,8 @@
     <mapping directory="$PROJECT_DIR$/ubersystem-deploy/puppet/modules/uber" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/attendee_tournaments" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/bands" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/barcode" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/guests" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/hotel" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/magclassic" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ubersystem-deploy/sideboard/plugins/magfest" vcs="Git" />
