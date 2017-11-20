@@ -74,15 +74,15 @@ if [ ${valid_event} -eq 0 ]; then
   exit -1
 fi
 
-if [ -d "ubersystem_deploy" ]; then
+if [ -d "ubersystem-deploy" ]; then
   echo "
-ERROR: Aborting: directory 'ubersystem_deploy' already exists, do you have a previous installation?
+ERROR: Aborting: directory 'ubersystem-deploy' already exists, do you have a previous installation?
 
 To uninstall a previous installation, please run the following commands (WARNING, THIS WILL DESTROY ALL PREVIOUSLY INSTALLED CODE/DATA)
-  cd ubersystem_deploy/
+  cd ubersystem-deploy/
   vagrant destroy       # ignore any errors you see here
   cd ..
-  rm -rf ubersystem_deploy/"
+  rm -rf ubersystem-deploy/"
   exit -1
 fi
 
