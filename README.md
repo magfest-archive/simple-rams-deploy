@@ -12,9 +12,9 @@ First, install all this stuff:
 
 It's recommended that you have a fast internet connection, at least 4gb of RAM, and a fast PC for this.
 
-## Choose an event
+## Choose an event and a year
 
-This deploy supports multiple events with different configuration.  Pick an event from [the list of valid events](https://github.com/magfest/simple-rams-deploy/blob/master/valid_eventnames.txt) (examples: 'magstock', 'labs', 'prime')
+This deploy supports multiple events with different configuration.  Pick an event/year combo from [the list of valid combinations](https://github.com/magfest/simple-rams-deploy/blob/master/valid_eventname_year_combos.txt) (examples: 'magstock 2018', 'labs 2018', 'prime 2019')
 
 ## Windows-specific setup
 
@@ -50,8 +50,8 @@ This deploy supports multiple events with different configuration.  Pick an even
 
 ## Common instructions (Windows/Linux/Mac/Cygwin/MingW)
 
-1. type ```./install-unix.sh insert-your-event-name-here``` from the terminal.  
-   For example, to install magstock, you would type: ```./install-unix.sh magstock```
+1. type ```./install-unix.sh desired_event_name desired_event_year``` from the terminal.
+   For example, to install magstock, you would type: ```./install-unix.sh magstock 2018```
 2. after the deploy is finished, open a web browser to ```http://localhost:8000/uber/accounts/insert_test_admin```. This will create a default username/password
 3. now you can login to ubersystem with username 'magfest@example.com' and password 'magfest'
 
