@@ -1,0 +1,4 @@
+labs_2018
+west_2018
+magstock_2018
+prime_2019
