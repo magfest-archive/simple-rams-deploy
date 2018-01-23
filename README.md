@@ -1,4 +1,4 @@
-# Magfest ubersystem simple deploy 
+# Magfest ubersystem simple deploy
 
 This is the officially supported method of setting up a development environment for Magfest's ubersystem.  It will get you a deployment config that is using the same plugins, and nearly identical configuration, as our production servers.  Once deployed,
 you can run a command to update all repositories to the latest changes from github.
@@ -14,7 +14,7 @@ It's recommended that you have a fast internet connection, at least 4gb of RAM, 
 
 ## Choose an event and a year
 
-This deploy supports multiple events with different configuration.  Pick an event/year combo from [the list of valid combinations](https://github.com/magfest/simple-rams-deploy/blob/master/valid_eventname_year_combos.txt) (examples: 'magstock 2018', 'labs 2018', 'prime 2019')
+This deploy supports multiple events with different configuration.  Pick an event name from [the list of valid names](https://github.com/magfest/simple-rams-deploy/blob/master/valid_eventnames.txt) and a year (examples: 'magstock 2018', 'labs 2018', 'prime 2019')
 
 ## Windows-specific setup
 
@@ -24,13 +24,13 @@ This deploy supports multiple events with different configuration.  Pick an even
    You can do this by opening a command prompt and running the following commands:
    ```
    cd C:\wherever\you\want\your\project\to\live\
-   
+
    git clone https://github.com/magfest/simple-rams-deploy
-   
+
    cd simple-rams-deploy
    ```
    ([More Instructions](https://help.github.com/articles/cloning-a-repository/) if you need them)
-   
+
 3. Follow the section named 'Common Instructions' below.
 
 ##  Linux/Mac instructions
@@ -39,9 +39,9 @@ This deploy supports multiple events with different configuration.  Pick an even
    You can do this by opening a command prompt and running the following commands:
    ```
    cd /home/myusername/somewhere/
-   
+
    git clone https://github.com/magfest/simple-rams-deploy
-   
+
    cd simple-rams-deploy
    ```
    ([More Instructions](https://help.github.com/articles/cloning-a-repository/) if you need them)
@@ -62,7 +62,7 @@ Installation complete!
 1. ```cd ubersystem-deploy```
 2. type ```vagrant ssh``` to access the running machine
 
-Now that things are fully installed, check out the docs here for more info on what to do next: 
+Now that things are fully installed, check out the docs here for more info on what to do next:
 https://github.com/magfest/ubersystem-deploy/blob/master/DEVELOPING.md
 
 ## Setup PyCharm For Debugging
@@ -75,7 +75,7 @@ https://github.com/magfest/ubersystem-deploy/blob/master/DEVELOPING.md
 7. Select your python interpreter as Python 3.4.3
 8. Set your working directory as ```/simple-rams-deploy/ubersystem-deploy/sideboard/sideboard```
 9. You should be able to run uber from Pycharm now! Good luck!
-  
+
 ## Troubleshooting
 
 * If you have previous deployments, you must ensure those VMs are stopped.  Either type 'vagrant halt' from their ubersystem-deploy directories, or open the  Virtualbox program from the start menu and power off any running VMs

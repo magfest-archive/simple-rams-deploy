@@ -12,22 +12,13 @@ echo -en "\n-------------------------\nUbersystem Installer\n-------------------
 # read list of valid event names from external file
 IFS=$'\r\n' GLOBIGNORE='*' command eval  'valid_eventnames=($(cat valid_eventnames.txt))'
 
-# read list of valid year names from external file
-IFS=$'\r\n' GLOBIGNORE='*' command eval  'valid_years=($(cat valid_eventyears.txt))'
-
-# read list of valid event name + year name combos from external file
-IFS=$'\r\n' GLOBIGNORE='*' command eval  'valid_combos=($(cat valid_eventname_year_combos.txt))'
-
 function join_by { local IFS="$1"; shift; echo "$*"; }
 
 function usage() {
   echo "Usage: $0 [event_name] [year]"
   echo ""
   echo "     'event_name' can be one of the following: ${valid_eventnames[*]}"
-  echo "     'year' can be one of the following: ${valid_years[*]}"
-  echo ""
-  echo "     currently valid combinations of events/years:"
-  echo -en "     -> "; join_by , "${valid_combos[@]}"
+  echo "     'year' can be any valid year: 2018, 2019, 2020, ..."
 }
 
 function array_contains() {
@@ -64,20 +55,7 @@ if [ ${valid_event} -eq 0 ]; then
   exit -1
 fi
 
-array_contains valid_years $event_year && valid_year=1 || valid_year=0
-if [ ${valid_year} -eq 0 ]; then
-  echo "ERROR: $event_year is not a valid event year."
-  usage
-  exit -1
-fi
-
 event_combo="${event_name}_${event_year}"
-array_contains valid_combos $event_combo && valid_combo=1 || valid_combo=0
-if [ ${valid_combo} -eq 0 ]; then
-  echo "ERROR: $event_combo is not a valid combination of event names and years"
-  usage
-  exit -1
-fi
 
 
 if [ -d "ubersystem-deploy" ]; then
