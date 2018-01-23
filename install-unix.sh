@@ -12,10 +12,13 @@ echo -en "\n-------------------------\nUbersystem Installer\n-------------------
 # read list of valid event names from external file
 IFS=$'\r\n' GLOBIGNORE='*' command eval  'valid_eventnames=($(cat valid_eventnames.txt))'
 
+function join_by { local IFS="$1"; shift; echo "$*"; }
+
 function usage() {
-  echo "Usage: $0 [event_name]"
+  echo "Usage: $0 [event_name] [year]"
   echo ""
-  echo "     event_name can be one of the following: ${valid_eventnames[*]}"
+  echo "     'event_name' can be one of the following: ${valid_eventnames[*]}"
+  echo "     'year' can be any valid year: 2018, 2019, 2020, ..."
 }
 
 function array_contains() {
@@ -38,12 +41,22 @@ if [ -z "$1" ]; then
 fi
 event_name=$1
 
+if [ -z "$2" ]; then
+  echo "ERROR: you must specify which event year you want to deploy."
+  usage
+  exit -1
+fi
+event_year=$2
+
 array_contains valid_eventnames $event_name && valid_event=1 || valid_event=0
 if [ ${valid_event} -eq 0 ]; then
   echo "ERROR: $event_name is not a valid event name."
   usage
   exit -1
 fi
+
+event_combo="${event_name}_${event_year}"
+
 
 if [ -d "ubersystem-deploy" ]; then
   echo "
@@ -58,11 +71,14 @@ To uninstall a previous installation, please run the following commands (WARNING
 fi
 
 function install_vagrant() {
-    echo "installing for event_name=$event_name"
+    local event_name=$1
+    local event_year=$2
+
+    echo "installing for event_name=$event_name event_year=$event_year"
     echo "If you have any issues, please send your install.log to code@magfest.org"
 
-    local event_name=$1
-    local vm_cmd="cd ~/uber/ && ./run-simple-deploy.sh $event_name && rm -f ./run-simple-deploy.sh"
+    local vm_cmd="cd ~/uber/ && ./run-simple-deploy.sh $event_name $event_year && rm -f ./run-simple-deploy.sh"
+    echo "vm_cmd=$vm_cmd"
 
     git clone https://github.com/magfest/ubersystem-deploy
     cd ubersystem-deploy
@@ -86,7 +102,7 @@ function post_install() {
     esac
 }
 
-install_vagrant ${event_name} && install_success=1
+install_vagrant ${event_name} ${event_year} && install_success=1
 post_install
 
 echo "-------------------------------- INSTALLATION ENDED --------------------------"
