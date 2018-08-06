@@ -12,8 +12,9 @@
       <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/magclassic" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/magfest" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/mits" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ubersystem-deploy/sideboard/plugins/magwest" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Remote Python 3.4.3 Vagrant VM at ~/projects/prime-deploy/ubersystem-deploy (/home/vagrant/uber/sideboard/env/bin/python3)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Remote Python 3.4.3 Vagrant VM at D:/projects/west-2018-deploy/ubersystem-deploy (/home/vagrant/uber/sideboard/env/bin/python)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">
