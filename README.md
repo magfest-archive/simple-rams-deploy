@@ -1,3 +1,8 @@
+# THIS REPOSITORY IS ARCHIVED
+
+For current development deployments, see https://github.com/magfest/reggie-formula
+
+
 # Magfest ubersystem simple deploy
 
 This is the officially supported method of setting up a development environment for Magfest's ubersystem.  It will get you a deployment config that is using the same plugins, and nearly identical configuration, as our production servers.  Once deployed,
